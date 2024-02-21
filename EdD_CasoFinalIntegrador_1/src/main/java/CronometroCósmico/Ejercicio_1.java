@@ -31,7 +31,7 @@ public class Ejercicio_1 {
     }
 
     private static void visualizarTiempoEnFormatos(double tiempoPlaneta) {
-        System.out.println("Tiempo en el nuevo planeta (format 1): " + tiempoPlaneta + " días");
+        System.out.println("Tiempo en el nuevo planeta (formato 1): " + tiempoPlaneta + " días");
 
     }
 
