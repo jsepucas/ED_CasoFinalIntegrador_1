@@ -30,7 +30,26 @@ public class Ejercicio_2 {
         mostrarEstadisticas("Comida", consumoComida);
         mostrarEstadisticas("Oxígeno", consumoOxigeno);
 
+    }
 
-}
+    public static void mostrarEstadisticas(String recurso, ArrayList<Integer> consumos) {
+        int suma = 0;
+        for (int consumo : consumos) {
+            suma += consumo;
+
+        }
+        int media = suma / consumos.size();
+        int minimo = Collections.min(consumos);
+        int maximo = Collections.max(consumos);
+
+        System.out.println("Estadísticas de " + recurso + ":");
+        System.out.println("Media: " + media);
+        System.out.println("Mínimo: " + minimo);
+        System.out.println("Máximo: " + maximo);
+
+
+
+
+    }
 
 
