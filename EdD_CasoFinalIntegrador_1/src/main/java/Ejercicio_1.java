@@ -1,5 +1,3 @@
-package CronometroCósmico;
-
 import java.util.Scanner;
 public class Ejercicio_1 {
 
