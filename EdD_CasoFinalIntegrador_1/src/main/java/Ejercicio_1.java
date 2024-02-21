@@ -16,7 +16,7 @@ public class Ejercicio_1 {
     }
 
 
-class ConversorTiempo {
+static class ConversorTiempo {
 
     private double diaTierraEnSegundos = 86400;
     private double anoTierraEnSegundos = 31536000;
