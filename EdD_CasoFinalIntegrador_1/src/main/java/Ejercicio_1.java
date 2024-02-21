@@ -11,5 +11,15 @@ public class Ejercicio_1 {
         System.out.println("Tiempo en la Tierra (segundos): " + earthSeconds);
         System.out.println("Equivalente en el nuevo planeta (segundos): " + newPlanetSeconds);
 
+        dataLimits.showDataLimits();
+
+
     }
+}
+
+class TimeConverter {
+
+    private double SegundosEnUnDiaEnLaTierra = 86400;
+    private double SegundosEnUnAñoEnElPlaneta = 31536000;
+
 }
