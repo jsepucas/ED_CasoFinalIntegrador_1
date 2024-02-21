@@ -14,14 +14,14 @@ public class Ejercicio_1 {
 
 
     }
-}
+
 
 class ConversorTiempo {
 
-    private double SegundosEnUnDiaEnLaTierra = 86400;
-    private double SegundosEnUnAñoEnElPlaneta = 31536000;
-    private double DiaEnPlanetaNuevoEnSegundas = 90000;
-    private double AñoEnPlanetaNuevoEnSegundos = 32850000;
+    private double diaTierraEnSegundos = 86400;
+    private double anoTierraEnSegundos = 31536000;
+    private double diaPlanetaNuevoEnSegundos = 90000;
+    private double anoPlanetaNuevoEnSegundos = 32850000;
 
     public double convertirTiempoTierraAPlanetaNuevo(double segundosTierra) {
         return segundosTierra * (diaPlanetaNuevoEnSegundos / diaTierraEnSegundos);
@@ -38,8 +38,7 @@ static class LimitesDatos {
         System.out.println("Máximo Long: " + Long.MAX_VALUE);
         System.out.println("Máximo Float: " + Float.MAX_VALUE);
         System.out.println("Máximo Double: " + Double.MAX_VALUE);
-
-
-
-
+    }
+    }
 }
+
