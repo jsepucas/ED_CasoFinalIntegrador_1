@@ -15,5 +15,22 @@ public class Ejercicio_2 {
         ArrayList<Integer> consumoComida = new ArrayList<>();
         ArrayList<Integer> consumoOxigeno = new ArrayList<>();
 
+        for (int i = 0; i < periodos; i++) {
+            System.out.println("Periodo " + (i + 1) + ":");
+            System.out.println("Introduce el consumo de agua (litros):");
+            consumoAgua.add(scanner.nextInt());
+            System.out.println("Introduce el consumo de comida (kilogramos):");
+            consumoComida.add(scanner.nextInt());
+            System.out.println("Introduce el consumo de oxígeno (litros):");
+            consumoOxigeno.add(scanner.nextInt());
+
+        }
+
+        mostrarEstadisticas("Agua", consumoAgua);
+        mostrarEstadisticas("Comida", consumoComida);
+        mostrarEstadisticas("Oxígeno", consumoOxigeno);
+
 
 }
+
+
