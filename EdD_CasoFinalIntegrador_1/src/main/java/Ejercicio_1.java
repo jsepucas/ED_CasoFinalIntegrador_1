@@ -17,9 +17,12 @@ public class Ejercicio_1 {
     }
 }
 
-class TimeConverter {
+class ConvertidorDeTiempo {
 
     private double SegundosEnUnDiaEnLaTierra = 86400;
     private double SegundosEnUnAñoEnElPlaneta = 31536000;
+    private double DiaEnPlanetaNuevoEnSegundas = 90000;
+    private double AñoEnPlanetaNuevoEnSegundos = 32850000;
+
 
 }
