@@ -46,10 +46,15 @@ public class Ejercicio_2 {
         System.out.println("Media: " + media);
         System.out.println("Mínimo: " + minimo);
         System.out.println("Máximo: " + maximo);
-
-
-
-
+        int umbralSeguro = 50; // Este valor es un ejemplo
+        if (media < umbralSeguro) {
+            System.out.println("Aviso: El consumo medio de " + recurso + " se encuentra por debajo del umbral seguro de " + umbralSeguro);
+        }
     }
+}
+
+
+
+
 
 
