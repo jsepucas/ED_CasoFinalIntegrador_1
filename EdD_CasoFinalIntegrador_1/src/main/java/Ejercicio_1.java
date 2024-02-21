@@ -32,5 +32,14 @@ class ConversorTiempo {
     }
 }
 
+static class LimitesDatos {
+    public void mostrarLimitesDatos() {
+        System.out.println("Máximo Integer: " + Integer.MAX_VALUE);
+        System.out.println("Máximo Long: " + Long.MAX_VALUE);
+        System.out.println("Máximo Float: " + Float.MAX_VALUE);
+        System.out.println("Máximo Double: " + Double.MAX_VALUE);
+
+
+
 
 }
