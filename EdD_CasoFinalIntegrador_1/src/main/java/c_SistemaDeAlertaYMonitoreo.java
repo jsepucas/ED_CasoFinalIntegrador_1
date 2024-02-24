@@ -59,3 +59,15 @@ public class c_SistemaDeAlertaYMonitoreo {
         }
         return true;
     }
+
+    private static void decomposeInPrimes(int number) {
+        List<Integer> factors = new ArrayList<>();
+        for (int i = 2; i <= number; i++) {
+            while (number % i == 0) {
+                factors.add(i);
+                number /= i;
+            }
+        }
+        System.out.println("Factores primos: " + factors);
+    }
+}
