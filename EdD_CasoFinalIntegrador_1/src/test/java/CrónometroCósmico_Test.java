@@ -11,3 +11,5 @@ public class CrónometroCósmico_Test {
         a_CrónometroCósmico.visualizarTiempoEnFormatos(tiempoPlaneta);
         // No se puede probar la salida de consola
     }
+
+
