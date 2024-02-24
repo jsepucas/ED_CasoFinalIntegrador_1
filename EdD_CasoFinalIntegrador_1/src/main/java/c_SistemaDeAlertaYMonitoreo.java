@@ -23,4 +23,17 @@ public class c_SistemaDeAlertaYMonitoreo {
         if (temperature > 30) System.out.println("Alerta: La Temperatura es alta");
         if (pressure < 960) System.out.println("Alerta: La presión es baja");
 
+        // Se solicita un número para listar los primeros n números primos
+
+        System.out.print("¿Cuántos números primos necesita listar? ");
+        int n = scanner.nextInt();
+        listFirstNPrimes(n);
+
+        // Se solicita un número para descomponer en factores primos
+
+        System.out.print("Ingrese un número para descomponer en factores primos: ");
+        int number = scanner.nextInt();
+        decomposeInPrimes(number);
+
+        scanner.close();
     }
