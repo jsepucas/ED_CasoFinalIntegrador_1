@@ -12,4 +12,15 @@ public class CrónometroCósmico_Test {
         // No se puede probar la salida de consola
     }
 
+    @Test
+    public void testIdentificarLimitesDeDatos() {
+        a_CrónometroCósmico.identificarLimitesDeDatos();
+        // No se puede probar la salida de consola
+    }
+
+    @Test
+    public void testMain() {
+
+    }
+}
 
