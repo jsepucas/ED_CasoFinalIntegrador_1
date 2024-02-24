@@ -37,3 +37,16 @@ public class c_SistemaDeAlertaYMonitoreo {
 
         scanner.close();
     }
+
+    private static void listFirstNPrimes(int n) {
+        int count = 0;
+        int number = 2;
+        System.out.println("Primeros " + n + " números primos son:");
+        while (count < n) {
+            if (isPrime(number)) {
+                System.out.println(number);
+                count++;
+            }
+            number++;
+        }
+    }
