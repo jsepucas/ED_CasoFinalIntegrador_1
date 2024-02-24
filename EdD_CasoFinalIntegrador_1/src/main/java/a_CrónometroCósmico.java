@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Ejercicio_1 {
+public class a_CrónometroCósmico {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -10,7 +10,7 @@ public class Ejercicio_1 {
         System.out.println("Introduce la duración del año en el nuevo planeta (en días): ");
         double duracionAnioPlaneta = scanner.nextDouble();
 
-        System.out.println("Ingrese el tiempo en la Tierra (en días): ");
+        System.out.println("Introduce el tiempo en la Tierra (en días): ");
         double tiempoTierra = scanner.nextDouble();
 
         double tiempoPlaneta = convertirTiempo(tiempoTierra, duracionDiaPlaneta, duracionAnioPlaneta);
@@ -23,17 +23,17 @@ public class Ejercicio_1 {
         scanner.close();
     }
 
-    private static double convertirTiempo(double tiempoTierra, double duracionDiaPlaneta, double duracionAnioPlaneta) {
+    static double convertirTiempo(double tiempoTierra, double duracionDiaPlaneta, double duracionAnioPlaneta) {
         double tiempoPlaneta = tiempoTierra * (duracionAnioPlaneta / 365) * duracionDiaPlaneta;
         return tiempoPlaneta;
     }
 
-    private static void visualizarTiempoEnFormatos(double tiempoPlaneta) {
+    static void visualizarTiempoEnFormatos(double tiempoPlaneta) {
         System.out.println("Tiempo en el nuevo planeta (formato 1): " + tiempoPlaneta + " días");
 
     }
 
-    private static void identificarLimitesDeDatos(){
+    static void identificarLimitesDeDatos(){
 
     }
 

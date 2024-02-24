@@ -3,7 +3,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
-public class Ejercicio_2 {
+public class b_Rescursos_Suministros {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
