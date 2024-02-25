@@ -1,37 +1,21 @@
+import java.util.Scanner;
+
 public class f_ComunicadorInterplanetario {
 
-    // Método para contar vocales en un mensaje
-    public static int contarVocales(String mensaje) {
-        int contador = 0;
-        for (char c : mensaje.toLowerCase().toCharArray()) {
-            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-                contador++;
-            }
-        }
-        return contador;
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bienvenido al Comunicador Interplanetario");
+        System.out.print("Introduzca su mensaje: ");
+        String mensaje = scanner.nextLine();
+
+        System.out.println("Análisis de mensaje en curso...");
+        int numeroDeVocales = contarVocales(mensaje);
+        System.out.println("Número de vocales (señales importantes) en el mensaje: " + numeroDeVocales);
+
+        String mensajeInvertido = invertirMensaje(mensaje);
+        System.out.println("Mensaje invertido (para descifrar códigos): " + mensajeInvertido);
+
+        boolean esPalindromo = verificarPalindromo(mensaje);
+        System.out.println("¿El mensaje es un palíndromo (integridad del mensaje)?: " + esPalindromo);
     }
-    public class ComunicadorInterplanetario {
-
-        // Método para contar vocales en un mensaje
-        public static int contarVocales(String mensaje) {
-            int contador = 0;
-            for (char c : mensaje.toLowerCase().toCharArray()) {
-                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-                    contador++;
-                }
-            }
-            return contador;
-        }
-
-        // Método en el que invertimos el mensaje
-        public static String invertirMensaje(String mensaje) {
-            return new StringBuilder(mensaje).reverse().toString();
-        }
-
-        // Aquí comprobamos si el mensaje es un palíndromo
-        public static boolean esPalindromo(String mensaje) {
-            String mensajeLimpiado = mensaje.toLowerCase().replaceAll("\\s+", "");
-            return mensajeLimpiado.equals(new StringBuilder(mensajeLimpiado).reverse().toString());
-        }
-    }
-}
