@@ -5,7 +5,7 @@ public class f_ComunicadorInterplanetario {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Bienvenido al Comunicador Interplanetario");
+        System.out.println("Te damos la bienvenidda al Comunicador Interplanetario");
         System.out.print("Introduzca su mensaje: ");
         String mensaje = scanner.nextLine();
 
