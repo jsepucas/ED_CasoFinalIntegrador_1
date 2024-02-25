@@ -8,12 +8,12 @@ public class a_CrónometroCósmico {
         double duracionDiaPlaneta = scanner.nextDouble();
 
         System.out.println("Introduce la duración del año en el nuevo planeta (en días): ");
-        double duracionAnioPlaneta = scanner.nextDouble();
+        double duracionAñoPlaneta = scanner.nextDouble();
 
         System.out.println("Introduce el tiempo en la Tierra (en días): ");
         double tiempoTierra = scanner.nextDouble();
 
-        double tiempoPlaneta = convertirTiempo(tiempoTierra, duracionDiaPlaneta, duracionAnioPlaneta);
+        double tiempoPlaneta = convertirTiempo(tiempoTierra, duracionDiaPlaneta, duracionAñoPlaneta);
         System.out.println("El tiempo equivalente en el nuevo planeta es: " + tiempoPlaneta + " días");
 
         visualizarTiempoEnFormatos(tiempoPlaneta);
