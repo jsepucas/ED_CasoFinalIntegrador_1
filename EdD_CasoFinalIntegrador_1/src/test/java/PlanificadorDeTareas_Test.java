@@ -26,3 +26,12 @@ public class PlanificadorDeTareas_Test {
         planificador.agregarMiembro(miembro2);
     }
 
+    @Test
+    void testDistribucionEquitativaTareas() {
+        planificador.distribuirTareas(tareas);
+
+        // Verifica que cada miembro de la tripulación tenga al menos una tarea asignada
+        // Asumiendo una distribución equitativa, cada miembro debería tener 2 tareas.
+        planificador.tripulacion.forEach(miembro -> assertEquals(2, miembro.tareas.size()));
+    }
+
