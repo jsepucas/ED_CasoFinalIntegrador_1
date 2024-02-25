@@ -56,6 +56,30 @@ public class d_PlanificadorDeTareas {
     }
 
     public String planificar() {
-        return "Hola, soy un planificador de tareas";
+        return "Hola!, soy un planificador de tareas";
+    }
+}
+
+class MiembroTripulacion {
+    private String nombre;
+    private List<Tarea> tareas;
+
+    public MiembroTripulacion(String nombre) {
+        this.nombre = nombre;
+        this.tareas = new ArrayList<>();
+    }
+
+    public void agregarTarea(Tarea tarea) {
+        tareas.add(tarea);
+    }
+
+    public void mostrarTareas() {
+        for (Tarea tarea : tareas) {
+            System.out.println(tarea.getNombre() + ": " + tarea.getDuracion() + " horas");
+        }
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 }
