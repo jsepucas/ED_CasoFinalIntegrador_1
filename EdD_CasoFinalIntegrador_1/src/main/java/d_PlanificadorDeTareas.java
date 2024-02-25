@@ -9,4 +9,12 @@ class d_PlanificadorDeTareas extends Exception {
         super(mensaje);
     }
 }
+class MiembroTripulacion {
+    private String nombre;
+    private int cargaTrabajo;
+
+    public MiembroTripulacion(String nombre) {
+        this.nombre = nombre;
+        this.cargaTrabajo = 0; // Inicialmente, la carga de trabajo es 0.
+    }
 
