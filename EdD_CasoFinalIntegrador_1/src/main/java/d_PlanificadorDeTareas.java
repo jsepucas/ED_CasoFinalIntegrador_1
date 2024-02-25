@@ -27,3 +27,35 @@ public class d_PlanificadorDeTareas {
             }
         }
     }
+
+    public void mostrarHorarios() {
+        for (MiembroTripulacion miembro : tripulacion) {
+            System.out.println("Horario de " + miembro.getNombre() + ":");
+            miembro.mostrarTareas();
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        d_PlanificadorDeTareas planificador = new d_PlanificadorDeTareas();
+
+        MiembroTripulacion miembro1 = new MiembroTripulacion("Juan");
+        MiembroTripulacion miembro2 = new MiembroTripulacion("Lorena");
+
+        planificador.agregarMiembro(miembro1);
+        planificador.agregarMiembro(miembro2);
+
+        List<Tarea> tareas = new ArrayList<>();
+        tareas.add(new Tarea("Tarea 1", 3)); // Tarea con duración de 3 horas
+        tareas.add(new Tarea("Tarea 2", 2)); // Tarea con duración de 2 horas
+        tareas.add(new Tarea("Tarea 3", 4)); // Tarea con duración de 4 horas
+        tareas.add(new Tarea("Tarea 4", 5)); // Tarea con duración de 5 horas
+
+        planificador.distribuirTareas(tareas);
+        planificador.mostrarHorarios();
+    }
+
+    public String planificar() {
+        return "Hola, soy un planificador de tareas";
+    }
+}
