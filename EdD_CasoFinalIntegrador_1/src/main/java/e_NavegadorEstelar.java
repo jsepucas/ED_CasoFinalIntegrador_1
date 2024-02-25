@@ -25,3 +25,19 @@ class e_NavegadorEstelar
         return datos[0].length;
     }
 
+public Matriz multiplicarPor(Matriz otra) throws IllegalArgumentException {
+    if (this.getColumnas() != otra.getFilas()) {
+        throw new IllegalArgumentException("Las matrices no son compatibles para la multiplicación.");
+    }
+
+    Matriz resultado = new Matriz(this.getFilas(), otra.getColumnas());
+    for (int i = 0; i < resultado.getFilas(); i++) {
+        for (int j = 0; j < resultado.getColumnas(); j++) {
+            for (int k = 0; k < this.getColumnas(); k++) {
+                resultado.datos[i][j] += this.datos[i][k] * otra.datos[k][j];
+            }
+        }
+    }
+    return resultado;
+}
+}
