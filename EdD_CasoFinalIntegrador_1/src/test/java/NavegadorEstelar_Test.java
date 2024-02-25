@@ -16,3 +16,11 @@ public class NavegadorEstelar_Test {
         a.establecerValor(1, 1, 5);
         a.establecerValor(1, 2, 6);
 
+        Matriz b = new Matriz(3, 2);
+        b.establecerValor(0, 0, 7);
+        b.establecerValor(0, 1, 8);
+        b.establecerValor(1, 0, 9);
+        b.establecerValor(1, 1, 10);
+        b.establecerValor(2, 0, 11);
+        b.establecerValor(2, 1, 12);
+
