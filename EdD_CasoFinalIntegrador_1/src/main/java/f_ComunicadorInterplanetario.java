@@ -34,4 +34,4 @@ public class f_ComunicadorInterplanetario {
             return mensajeLimpiado.equals(new StringBuilder(mensajeLimpiado).reverse().toString());
         }
     }
-
+}
