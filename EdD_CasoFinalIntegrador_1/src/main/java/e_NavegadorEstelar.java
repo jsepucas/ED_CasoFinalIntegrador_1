@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 // Clase para poder representar y operar con matrices
-class e_NavegadorEstelar
+class Matriz {
     private final int[][] datos;
 
     public Matriz(int filas, int columnas) {
