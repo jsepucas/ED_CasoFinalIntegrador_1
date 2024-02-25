@@ -41,3 +41,15 @@ public Matriz multiplicarPor(Matriz otra) throws IllegalArgumentException {
     return resultado;
 }
 }
+
+// Clase principal del Navegador Estelar
+class NavegadorEstelar {
+    private Matriz terreno;
+    private Matriz rutas;
+
+    public NavegadorEstelar(Matriz terreno) {
+        this.terreno = terreno;
+    }
+
+    // Métodos para la planificación de rutas y otras funcionalidades
+}
