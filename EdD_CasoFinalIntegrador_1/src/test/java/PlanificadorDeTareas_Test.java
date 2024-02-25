@@ -35,3 +35,21 @@ public class PlanificadorDeTareas_Test {
         planificador.tripulacion.forEach(miembro -> assertEquals(2, miembro.tareas.size()));
     }
 
+    @Test
+    void testContenidoTareasAsignadas() {
+        planificador.distribuirTareas(tareas);
+
+        // Se verifica que las tareas asignadas sean correctas en términos de duración total
+
+        int totalHorasMiembro1 = planificador.tripulacion.get(0).tareas.stream().mapToInt(Tarea::getDuracion).sum();
+        int totalHorasMiembro2 = planificador.tripulacion.get(1).tareas.stream().mapToInt(Tarea::getDuracion).sum();
+
+        // La suma de duraciones puede no ser exactamente igual debido a la división de tareas,
+        // pero debería estar relativamente balanceada
+
+
+        assertEquals(5, totalHorasMiembro1, "Las horas asignadas al miembro 1 no son las esperadas.");
+        assertEquals(9, totalHorasMiembro2, "Las horas asignadas al miembro 2 no son las esperadas.");
+    }
+}
+
