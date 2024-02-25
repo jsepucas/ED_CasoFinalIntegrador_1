@@ -4,7 +4,7 @@ import java.util.List;
 // Se crea una clase para el planificador de tareas
 
 public class d_PlanificadorDeTareas {
-    private List<MiembroTripulacion> tripulacion;
+    public List<MiembroTripulacion> tripulacion;
 
     public d_PlanificadorDeTareas() {
         this.tripulacion = new ArrayList<>();
@@ -62,7 +62,7 @@ public class d_PlanificadorDeTareas {
 
 class MiembroTripulacion {
     private String nombre;
-    private List<Tarea> tareas;
+    public List<Tarea> tareas;
 
     public MiembroTripulacion(String nombre) {
         this.nombre = nombre;
